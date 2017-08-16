@@ -5,7 +5,7 @@
     <groupId>com.arkanosis</groupId>
     <artifactId>JPDH</artifactId>
     <version>1.2-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>nar</packaging>
 
     <name>JPDH</name>
     <url>https://arkanosis.github.io/JPDH/</url>
@@ -25,8 +25,6 @@
         <javadoc>2.10.3</javadoc>
     </properties>
 
-    <dependencies>
-    </dependencies>
     <scm>
         <url>https://github.com/Arkanosis/JPDH</url>
         <connection>scm:git:https://github.com/Arkanosis/JPDH.git</connection>
@@ -46,10 +44,35 @@
             <plugin>
                 <groupId>com.github.maven-nar</groupId>
                 <artifactId>nar-maven-plugin</artifactId>
-                <version>3.2.3</version>
+                <version>3.5.2</version>
                 <extensions>true</extensions>
                 <configuration>
+                    <libraries>
+                        <library>
+                            <type>jni</type>
+                            <narSystemPackage>com.arkanosis.JPDH</narSystemPackage>
+                        </library>
+                    </libraries>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.10</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/nar/nar-generated/</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -114,4 +137,11 @@
             </plugin>
         </plugins>
     </reporting>
+    <dependencies>
+        <dependency>
+            <groupId>org.scijava</groupId>
+            <artifactId>native-lib-loader</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+    </dependencies>
 </project>
