@@ -23,6 +23,7 @@
         <!-- current year. -->
         <year>2016</year>
         <javadoc>2.10.3</javadoc>
+        <msvc.version>14</msvc.version>
     </properties>
 
     <scm>
