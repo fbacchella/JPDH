@@ -20,7 +20,7 @@ install:
   - cmd: COPY C:\maven\apache-maven-3.3.9\bin\mvn.cmd C:\maven\apache-maven-3.3.9\bin\mvn.bat
 
 build_script:
-  - mvn
+  - mvn package
 
 cache:
   - C:\maven\
