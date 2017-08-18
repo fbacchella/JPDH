@@ -1,6 +1,6 @@
 version: '{build}'
 
-os: Visual Studio 2013
+os: Visual Studio 2015
 
 platform: x64
 
@@ -18,6 +18,8 @@ install:
   - cmd: SET MAVEN_OPTS=-XX:MaxPermSize=2g -Xmx4g
   - cmd: SET JAVA_OPTS=-XX:MaxPermSize=2g -Xmx4g
   - cmd: COPY C:\maven\apache-maven-3.3.9\bin\mvn.cmd C:\maven\apache-maven-3.3.9\bin\mvn.bat
+  - cmd: cd "Program Files (x86)Microsoft Visual Studio 14.0VC"
+  - cmd: vcvarsall x64
 
 build_script:
   - mvn package
