@@ -4,9 +4,9 @@
 # include <string>
 
 # include <jni.h>
-# include <Pdh.h>
+# include <pdh.h>
 
-#include "com/arkanosis/jpdh/ProcessParser.hpp"
+#include "ProcessParser.hpp"
 
 namespace jpdh {
 

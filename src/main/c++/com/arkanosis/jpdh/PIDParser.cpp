@@ -1,6 +1,6 @@
 #include <sstream>
 
-#include "com/arkanosis/jpdh/PIDParser.hpp"
+#include "PIDParser.hpp"
 
 namespace jpdh {
 

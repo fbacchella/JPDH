@@ -1,5 +1,5 @@
-#include "com/arkanosis/jpdh/Counter.hpp"
-#include "com/arkanosis/jpdh/Query.hpp"
+#include "Counter.hpp"
+#include "Query.hpp"
 
 namespace jpdh {
 

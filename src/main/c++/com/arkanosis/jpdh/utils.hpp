@@ -2,7 +2,7 @@
 # define JPDH_UTILS_HPP_
 
 # include <jni.h>
-# include <Pdh.h>
+# include <pdh.h>
 
 namespace jpdh {
 

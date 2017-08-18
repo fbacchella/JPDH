@@ -1,6 +1,6 @@
 package com.arkanosis.jpdh;
 
-import com.arkanosis.JPDH.NarSystem;
+import com.arkanosis.jpdh.NarSystem;
 
 public class JPDH {
     static {

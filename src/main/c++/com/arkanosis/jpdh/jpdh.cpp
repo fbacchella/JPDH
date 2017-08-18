@@ -1,12 +1,12 @@
 #include <jni.h>
-#include <Pdh.h>
-#include <PdhMsg.h>
+#include <pdh.h>
+#include <pdhmsg.h>
 
-#include "com/arkanosis/jpdh/jpdh.h"
-#include "com/arkanosis/jpdh/utils.hpp"
-#include "com/arkanosis/jpdh/Counter.hpp"
-#include "com/arkanosis/jpdh/PIDParser.hpp"
-#include "com/arkanosis/jpdh/Query.hpp"
+#include "jpdh.h"
+#include "utils.hpp"
+#include "Counter.hpp"
+#include "PIDParser.hpp"
+#include "Query.hpp"
 
 namespace {
 

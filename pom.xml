@@ -50,7 +50,7 @@
                     <libraries>
                         <library>
                             <type>jni</type>
-                            <narSystemPackage>com.arkanosis.JPDH</narSystemPackage>
+                            <narSystemPackage>com.arkanosis.jpdh</narSystemPackage>
                         </library>
                     </libraries>
                 </configuration>

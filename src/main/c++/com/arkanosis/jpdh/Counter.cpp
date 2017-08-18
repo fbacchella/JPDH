@@ -1,12 +1,14 @@
+#include <cstring>
+#include <vector>
 #include <memory>
 #include <sstream>
 
-#include <Pdh.h>
-#include <PdhMsg.h>
+#include <pdh.h>
+#include <pdhmsg.h>
 
-#include "com/arkanosis/jpdh/Counter.hpp"
-#include "com/arkanosis/jpdh/Query.hpp"
-#include "com/arkanosis/jpdh/utils.hpp"
+#include "Counter.hpp"
+#include "Query.hpp"
+#include "utils.hpp"
 
 namespace jpdh {
 

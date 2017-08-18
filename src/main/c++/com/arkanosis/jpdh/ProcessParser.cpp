@@ -1,6 +1,6 @@
 #include <sstream>
 
-#include "com/arkanosis/jpdh/ProcessParser.hpp"
+#include "ProcessParser.hpp"
 
 namespace jpdh {
 
