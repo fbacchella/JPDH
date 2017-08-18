@@ -19,7 +19,7 @@ install:
   - cmd: SET JAVA_OPTS=-Xmx4g
   - cmd: COPY C:\maven\apache-maven-3.3.9\bin\mvn.cmd C:\maven\apache-maven-3.3.9\bin\mvn.bat
   - cmd: cd "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC"
-  - cmd: vcvarsall x64
+  - cmd: vcvarsall amd64
   - cmd: cd "C:\projects\jpdh"
   - cmd: mvn nar:nar-compile -X
 
