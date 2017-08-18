@@ -15,12 +15,13 @@ install:
         [System.IO.Compression.ZipFile]::ExtractToDirectory("C:\maven-bin.zip", "C:\maven")
       }
   - cmd: SET PATH=C:\maven\apache-maven-3.3.9\bin;%JAVA_HOME%\bin;%PATH%
-  - cmd: SET MAVEN_OPTS=-XX:MaxPermSize=2g -Xmx4g
-  - cmd: SET JAVA_OPTS=-XX:MaxPermSize=2g -Xmx4g
+  - cmd: SET MAVEN_OPTS=-Xmx4g
+  - cmd: SET JAVA_OPTS=-Xmx4g
   - cmd: COPY C:\maven\apache-maven-3.3.9\bin\mvn.cmd C:\maven\apache-maven-3.3.9\bin\mvn.bat
   - cmd: cd "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC"
   - cmd: vcvarsall x64
   - cmd: cd "C:\projects\jpdh"
+  - cmd: mvn nar:nar-compile -X
 
 build_script:
   - mvn package
